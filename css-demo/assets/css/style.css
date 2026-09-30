@@ -55,4 +55,37 @@ text-decoration:none;
 
 header.primary h1{
   font-size:2.4rem;
+  margin:0;
+}
+
+header.primary p.subtitle{
+  font-size:1.3rem;
+  margin:10px 0 20px;
+  letter-spacing: 0.2px;
+}
+
+header.primary nav{
+padding:0; /*TODO: not actually 0. just did this to evade warnings in vscode*/
+}
+
+header.primary nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap:10px;
+  /*40 padding on the front is standard for lists to contain the attachment. Here we're removing it.*/
+}
+
+header.primary nav ul li{
+list-style-type:none;
+margin-bottom: 10px
+}
+
+header.primary nav ul li a{
+  /*this could also be nav.primary a, but being this specific allows better reading (for editors, but particularly the code)*/
+  background-color: rgba(30,138,91,1);
+  padding: 5px 7.5px;
+  display:block;
+  border-radius:10px 30px;
+  border: 1px groove #000;
 }
