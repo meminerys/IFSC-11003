@@ -6,6 +6,25 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+header.primary{
+  background-color:#DCF7EB;
+  /*lonform*/
+  padding-top:40px;
+  padding-right:40px;
+  padding-bottom:40px;
+  padding-left:40px;
+
+  /*Single Value*/
+  padding:40px;
+
+  /*TRBL*/
+  padding: 40px 40px 20px 40px;
+
+  /*TB LR*/
+  padding: 20px 40px;
+  /*note that when multiple of the same selector are added, the last one will be applied. so the opposite of normal code reading*/
+}
  
 /* Make skip link visible when keyboard users tab to it */
 .visually-hidden:focus,
@@ -25,5 +44,15 @@ html {
 }
 
 body{
-    background-color: dodgerblue;
+  font-family: "Oxanium", sans-serif;
+  margin:0;
+}
+
+header.primary a{
+color:#B2A9CF;
+text-decoration:none;
+}
+
+header.primary h1{
+  font-size:2.4rem;
 }
