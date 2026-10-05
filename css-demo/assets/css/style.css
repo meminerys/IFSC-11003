@@ -7,8 +7,18 @@ html {
   box-sizing: inherit;
 }
 
+/*----UTILITY CLASSES----*/
+.container{
+width: 85vw;
+max-width:992px;
+margin:40px auto;
+}
+
+/*----GLOVAL STYLES----*/
 header.primary{
   background-color:#DCF7EB;
+  
+  text-align: center;
   /*lonform*/
   padding-top:40px;
   padding-right:40px;
@@ -49,8 +59,9 @@ body{
 }
 
 header.primary a{
-color:#B2A9CF;
+color:#FFF;
 text-decoration:none;
+
 }
 
 header.primary h1{
@@ -65,20 +76,21 @@ header.primary p.subtitle{
 }
 
 header.primary nav{
-padding:0; /*TODO: not actually 0. just did this to evade warnings in vscode*/
+color:#B2A9CF;
 }
 
 header.primary nav ul{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   gap:10px;
   /*40 padding on the front is standard for lists to contain the attachment. Here we're removing it.*/
 }
 
 header.primary nav ul li{
 list-style-type:none;
-margin-bottom: 10px
+margin-bottom: 10px;
+flex:1;
+
 }
 
 header.primary nav ul li a{
@@ -88,4 +100,31 @@ header.primary nav ul li a{
   display:block;
   border-radius:10px 30px;
   border: 1px groove #000;
+  transition:0.3s;
 }
+
+header.primary nav ul li a:hover{
+  background-color:#B2A9CF;
+}
+
+#content h2{
+color:rgba(30,138,91,1);
+border-bottom: 2px solid rgba(30,138,91,1);
+}
+
+#content p{
+  line-height:1.1;
+}
+
+/*media queries
+most sites have multiple. some builders have these built in.*/
+@media screen and (max-width:500px){
+  header.primary nav ul{
+    flex-direction:column;
+    gap:5px;
+  }
+} /*keep these at the bottom so they can inherit the earlier stuff*/
+
+/*there's a bunch of little niches for known breakpoints and standard dpi targets.
+  most of these are sort of industry practice or they're test-based.*/
+
