@@ -74,7 +74,8 @@ tr:hover{
 
 /*----GLOVAL STYLES----*/
 header.primary{
-  background-color:#DCF7EB;
+background-color: #dcf7eb;
+background-image: url("data:image/svg+xml,%3Csvg width='48' height='32' viewBox='0 0 48 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231e8a5b' fill-opacity='0.1'%3E%3Cpath d='M27 32c0-3.314 2.686-6 6-6 5.523 0 10-4.477 10-10S38.523 6 33 6c-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 6.627 0 12 5.373 12 12s-5.373 12-12 12c-2.21 0-4 1.79-4 4h-2zm-6 0c0-3.314-2.686-6-6-6-5.523 0-10-4.477-10-10S9.477 6 15 6c3.314 0 6-2.686 6-6h-2c0 2.21-1.79 4-4 4C8.373 4 3 9.373 3 16s5.373 12 12 12c2.21 0 4 1.79 4 4h2z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   
   text-align: center;
   /*lonform*/
@@ -92,7 +93,7 @@ header.primary{
   padding: 20px 40px;
   /*note that when multiple of the same selector are added, the last one will be applied. so the opposite of normal code reading*/
 }
- 
+
 /* Make skip link visible when keyboard users tab to it */
 .visually-hidden:focus,
 .visually-hidden:focus-visible {
@@ -256,14 +257,52 @@ footer.primary{
 /* this doesn't seem to have altered anything either. I either have a link descriptor under this that superceedes everything ever, or something is broke */
 /* FIXME: */
 
+#practice h4{
+  font-family:'Courier New', Courier, monospace;
+}
 
+#practice ol{
+  list-style-type:lower-roman;
+}
 
+#practice ul ul{
+list-style-type: square;
+}
 
+#practice dl{
+color:rgba(30,138,91,1);
+}
 
+#practice dt{
+  font-weight:bold;
+  /* margin-top: 20px; */
+}
 
+#practice dd + dt{
+  /* This will mark any dd that succeeds a dt*/
+  margin-top:20px; 
+}
 
+#practice dd{
+color: #000;
+font-style:italic;
+/* margin:0; */
+}
 
+#practice blockquote{
+  /* you can check blockquote gallery for extra stuff */
+  border: 2px solid #B2A9CF;
+  padding:5px;
+}
 
+#practice blockquote cite{
+  display: block;
+  margin-top:5px;
+  font-size: 0.7rem;
+  text-align:right;
+}
+
+/* heropatterns.com for svg background patterns */
 
 
 /*media queries
