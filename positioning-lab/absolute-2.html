@@ -79,7 +79,11 @@
         font-weight: normal;
         padding: 50px;
     }
-    </style>
+    /* this approach for footer works when you know the static dimensions of the element. */
+    /* the percentages didn't work on first glance because of the margin, which can also be forced out with a negative value.*/
+    /* thus, it's responsive, but requires you know the size of footer to know the required margin size.*/
+    /* css-tricks.com has the guide for centering everything, if needed. Sometimes translation is required*/
+</style>
 </head>
 <body>
     <h1>Exercise 4</h1>
