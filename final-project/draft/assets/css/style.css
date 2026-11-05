@@ -7,7 +7,75 @@ html {
     *:after {
         box-sizing: inherit;
     }
+/* UTILITY ---------------------------------------------------------------------------------------------------------------------------------------------*/
 
-h1{
-    background-color:green;
+/* GLOBAL --------------------------------------------------------------------------------------------------------------------------------------------- */
+body {
+    font-family: Helvetica, garamond;
+    /* display: grid;
+        gap: 20px;
+        max-width: 80vw;
+        margin: 20px auto; */
 }
+
+main{
+    background-color: pink;
+}
+
+.main-nav {
+    background-color: orange;
+    
+}
+
+.main-nav ul{
+    display: flex;
+        gap: 15px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+}
+
+footer{
+    background-color:aquamarine;
+}
+
+#foot-nav ul{
+    display:flex;
+    flex-direction:column;
+    gap: 5px;
+    list-style-type: none;
+}
+
+#foot-disclaim{
+    background-color: purple;
+}
+
+/* PAGE ----------------------------------------------------------------------------------------------------------------------------------------------- */
+h1.home-h1 {
+    font-family: 'Inter';
+    
+}
+
+#home-header {
+    background-color: red;
+}
+
+#about{
+    background-color: yellow;
+}
+
+#missions-prev{
+    background-color: greenyellow;
+}
+
+#articles-prev{
+    background-color: green;
+}
+
+/* MEDIA ---------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
